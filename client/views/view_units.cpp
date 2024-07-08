@@ -50,7 +50,7 @@ units_view::units_view() : QWidget()
   slist << _("Type") << _("Name") << _("★  Upgradable")
         << _("⚒  In Progress") << _("⚔  Active") << _("Shield Upkeep")
         << _("Food Upkeep") << _("Gold Upkeep");
-  ui.units_label->setText(QString(_("Units:")));
+  ui.units_group->setTitle(QString(_("Units:")));
   ui.units_widget->setColumnCount(slist.count());
   ui.units_widget->setHorizontalHeaderLabels(slist);
   ui.units_widget->setSortingEnabled(false);
@@ -271,7 +271,7 @@ void units_view::update_view()
   }
 
   if (max_row == 0) {
-    ui.units_label->setHidden(true);
+    ui.units_group->setHidden(true);
     ui.units_widget->setHidden(true);
     ui.find_but->setHidden(true);
     ui.upg_but->setHidden(true);
