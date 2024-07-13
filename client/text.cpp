@@ -243,41 +243,38 @@ const QString popup_info_text(struct tile *ptile)
     get_full_username(username, sizeof(username), owner);
     get_full_nation(nation, sizeof(nation), owner);
 
-    if (nullptr == client.conn.playing || owner == client.conn.playing) {
-      // TRANS: "City: <city name> | <username> (<nation + team>)"
-      str += QString(_("City: %1 | %2 (%3)"))
-                 .arg(city_name_get(pcity), username, nation)
-             + qendl();
-    } else {
+    // TRANS: "City: <city name> (founded in T<turn number)
+    str += QString(_("City: %1 (founded in T%2)"))
+               .arg(city_name_get(pcity),
+                    QString::number(city_turn_founded_get(pcity)), username,
+                    nation)
+           + qendl();
+
+    if (nullptr != client.conn.playing && owner != client.conn.playing) {
       struct player_diplstate *ds =
           player_diplstate_get(client_player(), owner);
       if (ds->type == DS_CEASEFIRE) {
         int turns = ds->turns_left;
 
-        /* TRANS:  "City: <city name> | <username>
-         * (<nation + team>, <number> turn cease-fire)" */
-        str += QString(PL_("City: %1 | %2 (%3, %4 turn cease-fire)",
-                           "City: %1 | %2 (%3, %4 turn cease-fire)", turns))
-                   .arg(city_name_get(pcity), username, nation,
-                        QString::number(turns))
+        /* TRANS:  " | <username> (<nation + team>, <number> turn
+         * cease-fire)" */
+        str += QString(PL_(" | %1 (%2, %3 turn cease-fire)",
+                           " | %1 (%2, %3 turn cease-fire)", turns))
+                   .arg(username, nation, QString::number(turns))
                + qendl();
 
       } else if (ds->type == DS_ARMISTICE) {
         int turns = ds->turns_left;
 
-        /* TRANS:  "City: <city name> | <username>
-         * (<nation + team>, <number> turn armistice)" */
-        str += QString(PL_("City: %1 | %2 (%3, %4 turn armistice)",
-                           "City: %1 | %2 (%3, %4 turn armistice)", turns))
-                   .arg(city_name_get(pcity), username, nation,
-                        QString::number(turns))
+        // TRANS:  " | <username> (<nation + team>, <number> turn armistice)"
+        str += QString(PL_(" | %1 (%2, %3 turn armistice)",
+                           "  | %1 (%2, %3 turn armistice)", turns))
+                   .arg(username, nation, QString::number(turns))
                + qendl();
       } else {
-        /* TRANS: "City: <city name> | <username>
-         * (<nation + team>, <diplomatic state>)" */
-        str += QString(_("City: %1 | %2 (%3, %4)"))
-                   .arg(city_name_get(pcity), username, nation,
-                        diplo_city_adjectives[ds->type])
+        /* TRANS: " | <username> (<nation + team>, <diplomatic state>)" */
+        str += QString(_(" | %1 (%2, %3)"))
+                   .arg(username, nation, diplo_city_adjectives[ds->type])
                + qendl();
       }
     }

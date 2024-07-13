@@ -528,6 +528,7 @@ void set_city_production(struct city *pcity);
 // properties
 
 const char *city_name_get(const struct city *pcity);
+int city_turn_founded_get(const struct city *pcity);
 struct player *city_owner(const struct city *pcity);
 struct tile *city_tile(const struct city *pcity);
 

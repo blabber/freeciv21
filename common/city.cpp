@@ -1076,6 +1076,14 @@ const char *city_name_get(const struct city *pcity) { return pcity->name; }
 #endif // city_name_get
 
 /**
+   Return the turn the city was founded.
+ */
+int city_turn_founded_get(const struct city *pcity)
+{
+  return pcity->turn_founded;
+}
+
+/**
    Return the owner of the city.
  */
 struct player *city_owner(const struct city *pcity)
