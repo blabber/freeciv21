@@ -572,8 +572,8 @@ initial revenue by entering the marketplace and selling trade goods, but it is r
 This limit is enforced only when attempting to establish a new trade route. If you temporarily lose the \
 ability to establish as many trade routes as a city already has, existing ones are not affected.\
 "), _("\
-Beware: in rulesets where Plague is enabled, it can travel along trade routes. See the Plague page in the \
-Cities section for more details.\
+Beware: in rulesets where Plague is enabled, it can travel along trade routes. See the *Plague* page in the \
+*Cities* section for more details.\
 "), _("\
 To view the current trade routes of a city, hold your mouse over the \"Trade:\" line on the general tab \
 in the city dialog.\
