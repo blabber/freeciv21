@@ -696,7 +696,7 @@ Keeping your citizens happy (or at least content) is one of the most important o
 your citizens become unhappy your cities will fall into disorder, which disrupts production. When your \
 citizens are happy your cities will celebrate and your output will increase greatly depending on the ruleset \
 and government. If migration is enabled, happiness also affects the relative desirability of cities. See the \
-section on Migration for details.\
+section on *Migration* for details.\
 "), _("\
 Each citizen managing the land is either Happy, Content, Unhappy, or Angry. The normal state of a citizen is \
 contentment. However, as your cities grow larger, crowding causes citizens to become unhappy. In the classic \
@@ -711,7 +711,7 @@ cities as best you can. In some rulesets, when a city is celebrating, you get ad
 bonuses, which greatly impacts your civilization's ability to generate gold and science output.\
 "), _("\
 It should be stressed that only citizens managing the land vary in morale. Specialists enjoy enough privilege \
-to remain perpetually content (see the section on Specialists). Thus one solution to the problem of an \
+to remain perpetually content (see the section on *Specialists*). Thus one solution to the problem of an \
 unhappy citizen is simply to assign that citizen to the role of a specialist. If cities are ever to manage \
 more than four tiles at once, the problem of morale must be confronted more directly.\
 "), _("\
@@ -733,7 +733,7 @@ rapture is ruleset defined and disabled for many player vs player online multipl
 "), _("\
 In small empires, as already stated, the fifth citizen in each city is the first unhappy one. As you gain \
 more cities, this limit actually decreases, to simulate the difficulty of imposing order upon a large \
-empire. The precise thresholds depend on the form of government. See the section on Government for details.\
+empire. The precise thresholds depend on the form of government. See the section on *Government* for details.\
 "), _("\
 Thus, you may find that building or conquering a city triggers widespread disorder across your empire. \
 Continued empire growth may lead to further penalty steps. In empires that grow beyond the point where no \
@@ -743,7 +743,7 @@ unhappy citizens can be made content, but in all other respects behave as unhapp
 Luxury goods make citizens happy. For every two luxury goods points a city produces, one content citizen is \
 made happy. If there are no content citizens left, unhappy citizens become content then happy. Each city \
 receives back some of the trade points it produces as luxury goods points according to your empire's tax \
-rates. See the section on Trade. Luxury goods points may also be produced by other means, such as Entertainer \
+rates. See the section on *Trade*. Luxury goods points may also be produced by other means, such as Entertainer \
 specialists in the classic ruleset.\
 "), _("\
 There are several city improvements that will make content those remaining citizens that are unhappy due to \
