@@ -603,7 +603,7 @@ leave Ruins, although these have no effect on game play.\
 "), _("\
 While city growth should usually be your goal, it comes with challenges. As cities grow, managing happiness \
 becomes a problem. This is described in its own section. Depending on the ruleset, Pollution (described in \
-the Terrain help), Plague, and Migration can also be issues.\
+the *Terrain* help), Plague, and Migration can also be issues.\
 "), _("\
 Each city may manage the terrain tiles within its reach. In the classic ruleset, this is a fixed radius of \
 approximately three tiles, giving access to 20 tiles on rectangular maps, or 18 tiles on hexagonal ones, in \
@@ -617,7 +617,7 @@ stationing your units on top of valuable resources around an enemy city. Units c
 \"Pillage\", which can be used to remove terrain alterations. Worker units could even transform the terrain \
 to make the tile less productive.\
 "), _("\
-The section on Terrain describes how the output of each tile is affected by the terrain, the presence of \
+The section on *Terrain* describes how the output of each tile is affected by the terrain, the presence of \
 special resources such as game (Pheasant) or minerals (Gold, Coal), and tile alterations built by units. \
 Note that the tile on which the city itself rests -- the \"City Center\" -- gets managed for free, without \
 being assigned a citizen. Think of this as \"Citizen Zero\". The city's center tile may also receive other \
@@ -633,7 +633,7 @@ discovered.\
 "), _("\
 The roles of citizens are controlled from the city dialog. Citizens managing the land are represented by \
 three numbers showing their output on the tile they are managing. Clicking on these numbers will remove the \
-citizen from the tile, turning it into a specialist (see the section on Specialists for more details). \
+citizen from the tile, turning it into a specialist (see the section on *Specialists* for more details). \
 This can be seen in the row of citizen icons at the top of the city dialog. You can click another tile to \
 assign the citizen to manage it, or click on the specialist icon to change the specialist's role.\
 "), _("\
@@ -666,8 +666,8 @@ of their home city. If nationality is enabled, you can see the cultural makeup o
 consequent effects on happiness in the city dialog, on the citizens tab.\
 "), _("\
 Cities may be enhanced with a wide variety of buildings, which can improve their productivity, their \
-military strength, or give them new abilities. See the sections on City Improvements and Wonders of the \
-World for more information.\
+military strength, or give them new abilities. See the sections on *City Improvements* and *Wonders of the \
+World* for more information.\
 ")
 
 [help_specialists]
