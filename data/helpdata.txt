@@ -457,7 +457,7 @@ food deficit ends.\
 Excess food can increase the population. The city Granary has a limited capacity, and once full the city \
 grows by one citizen and the Granary starts again at empty. Since Granary capacity increases with \
 population, each citizen is more costly than the last, making this mode of growth important only for small \
-cities. An alternative way for cities to grow is \"Rapture\", described in the section on Happiness.\
+cities. An alternative way for cities to grow is \"Rapture\", described in the section on *Happiness*.\
 ")
 
 [help_production]
